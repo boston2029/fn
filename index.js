@@ -6,7 +6,7 @@ const app = express();
 app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
-    frameAncestors: ['trusted.com', 'another-trusted.com'] // replace with the domains you want to allow
+    frameAncestors: ['ulbc.xyz', 'ph.ulbc.xyz'] // replace with the domains you want to allow
   }
 }));
 
