@@ -1,14 +1,7 @@
 const express = require('express');
-const helmet = require('helmet');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
-app.use(helmet.contentSecurityPolicy({
-  directives: {
-    defaultSrc: ["'self'"],
-    frameAncestors: ['ulbc.xyz', 'ph.ulbc.xyz'] // replace with the domains you want to allow
-  }
-}));
 
 const nggUrl = 'https://mathsspot.com';
 
