@@ -26,3 +26,6 @@ const port = process.env.PORT || 443;
 app.listen(port, () => {
   console.log(`CybriaGG is running on port ${port}`);
 });
+
+
+module.exports = app;
